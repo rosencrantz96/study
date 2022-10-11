@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="">
+    <fieldset>
+      <legend>상품 선택</legend>
+     
+    </fieldset>
+    <fieldset>
+      <legend>배송 정보</legend>
+      <ul>
+        <li>
+          <label for="user-name">이름 </label>
+          <input type="text" id="user-name">
+        </li>
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="addr">
+        </li>
+        <li>
+          <!-- 다 텍스트긴 하지만 명시적으로 알려주는 것이 더 좋음 -->
+          <!-- 체크 때문에?  -->
+          <label for="mail">이메일</label>
+          <input type="email" id="mail">
+        </li>        
+        <li>
+          <label for="phone">연락처</label>
+          <!-- tel로 체크를 해주면 명시적 효과 뿐만 아니라 모바일에서 바로 전화 걸기 가능 -->
+          <input type="tel" id="phone">
+        </li>
+      </ul>  
+    </fieldset> 
+  </form>
+</body>
+</html>
