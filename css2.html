@@ -5,59 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link를 이용하는 방법 (링크 복사 후 타이틀 아래에 복붙하면 됨) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
     <style>
-        /* 1. 전체 선택자: * {} body, head, html까지도 적용된다.  */
-        /* * {
-            color: aquamarine;
-            font-style: 20px;
-        } */
-        
-        /* 2. 태그(타입) 선택자 */
-        /* p {
-            color: red;
-        }
-         */
+        /* @import를 이용하는 방법은 이것! 둘 중 편한거 쓰면 됨. */
+        /* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap'); */
 
-        /* 3. 클래스 선택자: 공통적으로 스타일을 적용할 때 */
-        /* .title {
-            color: aqua;
-        }
-
-        .title2 {
-            font-size: 6px;
-            color: red;
-        }
-
-        .on {
+        h1 {
+            font-size: 30px;
             font-style: italic;
-        } */
+            font-family: 'Nanum Myeongjo', serif;
+            /* 컬러: 자동완성 기능 혹은 헥사코드 이용(구글에 컬러코드 검색) */
+            /* color: #084B8A; */
+            /* color: #000; 헥사코드 */
 
-        /* 4. id 선택자: 각각 스타일을 적용할 때 */
-        /* class(공통)와 id(개별)의 차이를 잘 알아두어야 한다! */
-        /* #board {
-           color: aqua;
-        }
 
-        #contents {
-            color: red;
-        } */
-
-        /* 그룹 선택자: 한꺼번에 적용도 가능 */
-        #board, #contents, .title, span {
-            color: red;
+            /* color: hsl(hue, saturation, lightness) ; */
+            color: hsl(0, 100%, 50%) ;
+            /* alpha: 투명도 */
+            /* color: hsla(hue, saturation, lightness, alpha); */
+               
+            /* grb: 얘도 구글에 검색해서 복사 후 사용하면 됨 */
+            color: rgb(red, green, blue);
+            color: rgba(red, green, blue, alpha);
         }
     </style>
 </head>
 <body>
-    <!-- *class명은 의미가 있는 이름으로 같게 해줘야 한다 -->
-    <!-- class 이름은 여러개를 만들 수 있다 (한 칸 띄어쓰면 됨)-->
-    <!-- id명은 의미가 있는 이름으로 다르게 해줘야(유일한 값) 한다. (중복x) -->
-     <h1 class="title2 on" id="board">자유게시판</h1>
-     <p class="title2" id="contents">안녕하세요. 내용입니다.</p>
-     <p class="title on">안녕하세요. 내용입니다.</p>
-     <span class="title2">span태그입니다.</span>
-     <form>
-        <input type="text" name="user_id" id="user_id">
-     </form>
+    <h1>안녕하세요. 안녕하세요.</h1>
 </body>
 </html>

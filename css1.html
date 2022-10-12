@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* ctrl + / */
-        /* 주석입니다. */
-        /* 2. 내부스타일 작성법 */
-        p  { 
-                color: brown; 
-                font-size: 20px;
-            }  
+        /* 100% = 1배, em, rem = 배수. 퍼센트는 글자보단 박스모델에 더 많이 사용! 글자는 em, rem 더 많이 사용 */
+        /* **em과 rem의 차이 잘 알아두세요. (em: 부모 태그가 폰트 기준, rem: html 페이지 폰트 사이즈가 기준) */
+        
+        /* * {
+            font-size: 2em;
+        } */
+
+        html {
+            font-size: 30px;
+        }
+
+        #content {
+            font-size: 10px;
+        }
+        
+        #content p {
+            /* em: 부모가 기준 */
+            font-size: 2em;
+        }
+
+        p:nth-of-type(1) { font-size: 1rem;}
+        p:nth-of-type(2) { font-size: 2rem;}
     </style>
-    <!-- 3. 외부스타일 작성법 -->
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- 주석입니다. -->
-    <h1>자유게시판</h1>
-    <p>안녕하세요. 내용입니다.</p>
-    <!-- 1. 인라인 스타일: 이름 그대로 태그 안에다가 스타일이라는 속성을 매겨주는 것 -->
-    <span style="color: blueviolet; font-size: 20px;">span태그입니다.</span>
+    <div id="content">
+        <p>1. Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <p>2. Lorem ipsum dolor sit amet consectetur.</p>
+    <p>3. Lorem ipsum dolor sit amet consectetur.</p>
 </body>
-</html> 
+</html>
