@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        **정말 중요
+        block: margin과 padding을 자유롭게 지정, width-height 자유롭게 변경 가능  
+            div, 시멘틱 태그(레이아웃), p, h1~h6, table, ul ... (구조를 생각하면서 짜야 하니까 이 정도는 꼭 외워두기...)
+            
+        inline: margin과 padding을 좌우만 지정 가능, width-height 변경 불가
+            a, img, span, button, textarea, selct, input, label ... (외워야 해요... 그래야 css로 잘 넘어갈 수 있다)
+
+        inline-block: inline 태그처럼 한 줄로 정렬이 되지만 block 태그의 특징을 사용할 수 있다
+        이걸 잘 사용해야 레이아웃을 잘 짤 수 있다! 
+        
+        */
+        p {
+           display: inline; 
+        }
+
+        span {
+            /* 어차피 적용 안 됨 */
+            /* width: 500px;
+            height: 500px; */
+
+            /* 인라인이지만 블록처럼 사용 가능!! (인라인으로 보이지만 블록의 속성 사용 가능) */
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background-color: aqua;
+            /* display: none */
+            display: inline-block;            
+        }
+    </style>
+</head>
+<body>
+    <!-- 블록 태그 -->
+    <p>블록 태그</p>
+    <p>블록 태그</p>
+    <p>블록 태그</p>
+    <p>블록 태그</p>
+    <!-- 인라인 태그 -->
+    <span>인라인 태그</span>
+    <span>인라인 태그</span>
+    <span>인라인 태그</span>
+    <span>인라인 태그</span>
+</body>
+</html>
