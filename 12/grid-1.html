@@ -6,9 +6,16 @@
   <title>CSS Grid Layout</title>
   <style>
     #wrapper{
-    display: grid;  /* 그리드 컨테이너 지정 */
-    grid-template-columns: 200px 200px 200px;  /* 너비 200px 칼럼 3개 */
-    grid-template-rows: 100px;  /* 줄 높이 100px */
+      /* 1. 디스플레이 그리드 지정 */
+      display: grid;
+      /* 각각 컬럼과 로우 지정 (가장 기본적인 사용법) */
+      /* px: 고정값(절대값), fr: 뷰포트 영역에서 비율로 따지게 됨 */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      /* 반복할 때는 이렇게 나타내어도 됨 */
+      /* grid-template-rows: 100px 100px; */
+      grid-template-rows: minmax(100px, auto)
+      /* 최소 로우와 최대 로우를 지정해주는 것.(최소는 100px, 최대는 자동! 글자에 맞춰서?) */
   }
   .items{
     padding: 10px;

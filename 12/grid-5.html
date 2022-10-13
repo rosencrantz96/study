@@ -7,7 +7,9 @@
   <style>
     #wrapper{
     width: 700px;
+    /* 1. 컨테이너에 그리드 먼저 주세요 */
     display: grid;
+    /* 2. 3행 3열 만들기 */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 100px);
   }
@@ -19,6 +21,7 @@
   }   
   .box1 {
     background-color: #3689ff;
+    /* 3. 컬럼의 영역 지정 (1~4를 차지하겠다) */
     grid-column: 1/4;
   }
   .box2 {
@@ -28,12 +31,13 @@
   .box3 {
     background-color: #ff9019;
     grid-column: 2/4;
-    grid-row-start: 2;   /* 시작과 끝을 같이 지정 grid-row:2/3; */
+    /* 4. box 3과 4는 시작 위치도 지정해주어야 함 (시작점이 1이 아니니까) */
+    grid-row-start: 2;
     }
   .box4 {
     background-color: #ffd000;
-    grid-column-start: 3;   /* 시작과 끝을 같이 지정 grid-column:3/4 */
-    grid-row-start: 3;      /* 시작과 끝을 같이 지정 grid-row:3/4 */
+    grid-column-start: 3;
+    grid-row-start: 3;
   }
   </style>
 </head>

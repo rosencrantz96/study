@@ -8,12 +8,14 @@
     #wrapper{
     width: 700px;
     display: grid;
+    /* 2. 행과 열을 만들고 */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 100px);
+    /* 3. grid-template-areas로 배열 */
     grid-template-areas: 
-      "box1 box1 box1"
-      "box2 box3 box3"
-      "box2 . box4";
+    "box1 box1 box1"
+    "box2 box3 box3"
+    "box2 . box4";
   }
   .box{
     padding: 15px;
@@ -21,21 +23,25 @@
     font-weight: bold;
     text-align: center;
   }   
+  /* 1. grid-area로 박스를 만들어주고 */
   .box1 {
     background-color: #3689ff;
     grid-area: box1;
+
   }
   .box2 {
-    background-color: #00cf12;
-    grid-area: box2;
+      background-color: #00cf12;
+      grid-area: box2;
   }
   .box3 {
     background-color: #ff9019;
     grid-area: box3;
-    }
+
+  }
   .box4 {
     background-color: #ffd000;
     grid-area: box4;
+
   }
   </style>
 </head>
