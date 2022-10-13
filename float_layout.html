@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 962px;
+            margin: 0 auto;
+        }
+        
+        /* aside 오른쪽 하고 section 왼쪽 해줘도 됨 눈으로 보이는 건 똑같음 */
+        #aside {
+            width: 200px;
+            height: 100%; 
+            float: right;
+        }
+
+        .section {
+            width: 760px;
+            float: right;
+        }
+
+        #wrap {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Header</h1></div>
+    <div id="navigation"><h1>Navigation</h1></div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et maiores quo fugit repellat esse minus magni distinctio inventore ipsa explicabo. Natus beatae ut vero at quam, repudiandae molestiae ducimus voluptas.</p>
+        </div>
+        <div id="section1" class="section">
+            <h1>Section1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et maiores quo fugit repellat esse minus magni distinctio inventore ipsa explicabo. Natus beatae ut vero at quam, repudiandae molestiae ducimus voluptas.</p>
+        </div>
+        <div id="section2" class="section">
+            <h1>Section2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et maiores quo fugit repellat esse minus magni distinctio inventore ipsa explicabo. Natus beatae ut vero at quam, repudiandae molestiae ducimus voluptas.</p>
+        </div>
+        <div id="section3" class="section">
+            <h1>Section3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nesciunt tempora iusto temporibus quod blanditiis ex. Quas ipsum enim magni? Dolor qui blanditiis et mollitia officia, harum praesentium dolorem cupiditate!</p>
+        </div>
+    </div>
+    <div id="footer"><h1>Footer</h1></div>
+</body>
+</html>
