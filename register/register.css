@@ -72,6 +72,15 @@ body {
     padding: 5px;
     width: 200px;
 }
+ 
+/* 위에걸 이렇게 하면 더 간단하게 만들 수 있다! */
+#signup input:not([type=radio]) {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+}
 
 /* input에서 required 속성을 가진 요소만 선택 */
 #signup input[required] {
