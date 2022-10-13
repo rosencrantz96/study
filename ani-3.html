@@ -7,12 +7,14 @@
     .box {
       width: 100px;
       height: 100px;
-      margin: 60px auto;      
+      margin: 60px auto;    
+      /* 한 번에 지정 가능  */
       animation: rotate 1.5s infinite, background 1.5s infinite alternate;
     }
 
     @keyframes rotate {  /* 0도 -> x축 -180도 회전 -> y축 -180도 회전 */
       from { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+      /* 수치화를 할 수도 있다! */
       50% { transform: perspective(120px) rotateX(-180deg) rotateY(0deg); }
       to { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
     }
