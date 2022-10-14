@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 반응형에서 응용할 수 있게 만들어짐 -->
+    <!-- content에 뷰포트 설정을 넣어줄 수 있다! -->
+    <!-- 설정하지 않은 것은 기본값으로 지정됨. -->
+    <!-- min-width: ~부터, max-width: ~까지 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 960px;
+            height: 500px;
+            background: skyblue;
+            margin: 0 auto;
+        }
+
+        #wrap div {
+            width: 300px;
+            height: 100%;
+            background: salmon;
+        }
+
+        /* 0 ~ 959px */
+        /* 최대 959까지 안에 오는 css를 적용하겠다! */
+        @media screen and (max-width: 959px) {
+            #wrap {
+                width: 100%;
+            }
+            #wrap div {
+            /* px값은 고정이기 때문에 화면을 줄이면 비율이 깨짐. 가변 그리드 공식으로 계산해줘야 비율을 지킬 수 있다! */
+                width: 31.25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+    </div>
+</body>
+</html>
