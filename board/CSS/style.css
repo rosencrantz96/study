@@ -276,7 +276,7 @@ a {
     }
 
     .board_wrap {
-        width: 1000vw;
+        width: 100vw;
     }
 }
 
@@ -301,7 +301,7 @@ a {
     }
 
     .board_wrap {
-        width: 1000vw;
+        width: 100vw;
     }
 
     /* board_write 부분... 뭔가 에러가 있음 */
