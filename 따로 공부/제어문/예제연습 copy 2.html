@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+
+        // 뒤에오는 연산자는 대입 후 1 증가 혹은 감소 
+        num1--;
+        document.write(num1, "<br>") // 9
+        num1++;
+        document.write(num1, "<br>") // 10
+
+
+        // 앞에오는 연산자는 1 증가 혹은 감소 후 대입 
+        result = num2++;  // result: 20, num2: 21 // 화면에는 20으로 나오지만 실제 num2 값은 21
+	    document.write(result, "<br>"); 
+        result = ++num2; // result: 22, num2: 22  // 실제 num2 값이 21이었으니 거기에 1을 더해서 22가 되었음! 그래서 22로 출력. 
+        document.write(result, "<br>") 
+        result = num2--; // result: 22, num2: 21 
+        document.write(result, "<br>");
+        result = --num2; // result: 20, num2: 20
+        document.write(result);
+
+        // 연산자가 앞에 오면! 바로 증감 계산하면 됨! 일단 증감을 먼저 하기 때문에! 그 다음에 대입임! 1+라고 생각하면 될듯 
+        // 연산자가 뒤에 오면! 일단 대입을 먼저 하기 때문에 바로 화면에 보이지 않음! 일단 보여줌 다음에 +1
+    </script>
+</body>
+</html>
