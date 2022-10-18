@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const todos = [
+        { id: 3, content: 'HTML', completed: false },
+        { id: 2, content: 'CSS', completed: true },
+        { id: 1, content: 'Javascript', completed: false }
+        ];
+
+        // const get = property => object => object[property];
+
+        function get(property) {
+            return function(object) {
+                    return object[property];
+            }
+        }
+
+        const getId = get('id');
+        const getContent = get('content');
+        const getCompleted = get('completed');
+
+        const getTodosIdArr = todos => todos.map(getId);
+        const getTodosContentArr = todos => todos.map(getContent);
+        const getTodosCompletedArr = todos => todos.map(getCompleted);
+
+        console.log(getTodosIdArr(todos)); // [ 3, 2, 1 ]
+        console.log(getTodosContentArr(todos)); // [ 'HTML', 'CSS', 'Javascript' ]
+        console.log(getTodosCompletedArr(todos)); // [ false, true, false ]
+    </script>
+</body>
+</html>

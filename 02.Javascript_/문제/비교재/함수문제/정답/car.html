@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(name, color, price, engine) {
+          // 생성자
+          this.name = name;
+          this.color = color;
+          this.price = price;
+          this.engine = engine
+        }
+
+        printNameAndColor() {
+          console.log(`모델명: ${this.name} 색상: ${this.color}`);
+        }
+
+        risePrice(price) {
+            this.price += price;
+        }
+
+        changeEngine(engine) {
+            this.engine = engine;
+        }
+      }
+
+      const k5 = new Car("K5", "white", 3000, "I4");
+      const k7 = new Car("K7", "white", 3800, "I5");
+
+      k5.printNameAndColor(); 
+      k7.printNameAndColor();
+
+      console.log("k5 가격 인상 전", k5.price);
+      k5.risePrice(100);
+      console.log("k5 가격 인상 후", k5.price);
+
+      console.log("k7 엔진 변경 전", k7.engine);
+      k7.changeEngine("I6");
+      console.log("k7 엔진 변경 후", k7.engine);
+    </script>
+  </body>
+</html>

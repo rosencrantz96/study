@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /* 
+    자판기 문제:
+    자판기에 넣은 돈과 과자를 입력받은후 
+    내가 입력한 과자이름과 거스름돈을 브라우저에 출력해보자. 
+    입력받을 과자 종류는 다음과 같다.
+    과자 종류: 허니버터(1300원), 칸쵸(1500원), 프링글스(3000원)   
+    */
+    var money = prompt("돈은 얼마를 넣으실 건가요?", 0);
+    /* 변수는 중괄호 바깥에다가 선언하면 중괄호의 제약을 받지 않는다.
+       중괄호 안에 선언한 변수는 중괄호 안에서만 사용가능
+    */
+    var snack;
+    var honeybutter = 1300, cancho = 1500, pringles = 3000; // 과자 값
+    var change = 0; //거스름돈
+
+    /* 돈 넣었는지 안 넣었는지 판단 */
+    if (money == 0) { // 돈을 넣지 않았을때
+        alert("돈을 넣으세요.");
+        location.reload();
+    } else {    // 돈을 넣었을때 
+        snack = prompt("어떤 과자를 뽑으실 건가요?(허니버터, 칸쵸, 프링글스)", "");
+
+        // 돈을 넣으면 과자 이름 판단 후 거스름돈 계산
+        if (snack == "허니버터") {
+            change = money - honeybutter;
+        } else if (snack == "칸쵸") {
+            change = money - cancho;
+        } else if (snack == "프링글스") {
+            change = money - pringles;
+        } else {
+            alert("해당 과자가 없습니다.");
+            location.reload(); //새로고침
+        }
+
+        // 돈이 모자랄 경우 판단
+        if (change < 0) {
+            alert("돈이 모자랍니다ㅠㅠ");
+            location.reload(); //새로고침
+        } else {
+            document.write(snack + "나왔습니다! 거스름돈:" + change + "원 입니다." )
+        }
+    }  
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {list-style: none;}
+        header, footer, section {box-sizing: border-box;}
+
+        .wrap {
+            background: beige;
+        }
+
+        .header__nav {
+            background: aquamarine;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header__nav > h1 {
+            width: 100px;
+            height: 120px;
+        }
+
+        .header__nav > nav {
+            background: aqua;
+        }
+
+        .header__nav > nav > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .slider__content {
+            background: blue;
+        }
+
+        .menu2__content {
+            background: blueviolet;
+        }
+
+        .menu2__content ul {
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .menu2__content ul li {
+            float: left;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <h1>IBK기업은행</h1>
+            <nav>
+                <ul>
+                    <li>개인뱅킹</li>
+                    <li>기업뱅킹</li>
+                    <li>금융상품</li>
+                    <li>금융서비스</li>
+                    <li>금융정보</li>
+                    <li>카드</li>
+                </ul>
+            </nav>
+            <div class="menu1">전체메뉴</div>
+        </div>
+    </header>
+    <main class="wrap">
+        <section class="slider">
+            <div class="slider__content">
+
+            </div>
+        </section>
+        <section class="menu2">
+            <div class="menu2">
+                <ul class="menu2__content">
+                    <li>계좌조회</li>
+                    <li>카드조회</li>
+                    <li>카드등록</li>
+                    <li>환율조회</li>
+                    <li>소비자포털/민원</li>
+                    <li>상품공시실/약관</li>
+                    <li>서민금융</li>
+                    <li>IBK 부동산 매물광장</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <ul>
+                    <li>slider</li>
+                    <li>
+                        <ul>
+                            <li>알림</li>
+                            <li>이벤트</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <ul>
+                    <li>IBK 큐브</li>
+                    <li>금융정보톡</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>새소식</li>
+                    <li>공고</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>지급보증서발급조회</li>
+                    <li>잔액증명서발급조회</li>
+                    <li>이용시간</li>
+                    <li>수수료안내</li>
+                    <li>전자민원접수</li>
+                    <li>이메일상담</li>
+                    <li>IBK퇴직연금</li>
+                    <li>IBK BOX POS</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

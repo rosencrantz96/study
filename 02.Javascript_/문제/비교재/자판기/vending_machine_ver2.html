@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var money = prompt("돈은 얼마를 넣으실 건가요?", 0);
+    var snack;
+    // var honeybutter = 1300, cancho = 1500, pringles = 3000; // 과자 값
+    var change = 0; //거스름돈
+
+
+
+    /* 돈 넣었는지 안 넣었는지 판단 */
+    if (money == 0) { // 돈을 넣지 않았을때
+        alert("돈을 넣으세요.");
+        location.reload();
+    } else {    // 돈을 넣었을때 
+        snack = prompt("어떤 과자를 뽑으실 건가요?(허니버터, 칸쵸, 프링글스)", "");
+
+        var noSnack = true;
+        var defaultSnack = ["허니버터", "칸쵸", "프링글스"];
+        var defaultMoney = [1300, 1500, 3000];
+        
+        for(i in defaultSnack) {
+            // 돈을 넣으면 과자 이름 판단 후 거스름돈 계산
+            if (snack == defaultSnack[i]) {
+                change = money - defaultMoney[i];
+                noSnack = false;
+            } 
+        }
+
+        if (noSnack) {
+            alert("해당 과자가 없습니다.");
+            location.reload(); //새로고침
+        }
+
+        // 돈이 모자랄 경우 판단
+        if (change < 0) {
+            alert("돈이 모자랍니다ㅠㅠ");
+            location.reload(); //새로고침
+        } else {
+            document.write(snack + "나왔습니다! 거스름돈:" + change + "원 입니다." )
+        }
+    }  
+
+    
+
+
+    //객체 선언(key와 value로 구성됨)
+    /*
+    var snack = {
+        honeybutter: 1300,
+        cancho: 1500,
+        pringles: 3000
+    } 
+
+    for (var key in snack) {
+        console.log(key);
+    }
+    */
+
+    
+</script>
+</body>
+</html>

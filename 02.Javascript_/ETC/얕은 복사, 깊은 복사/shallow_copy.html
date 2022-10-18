@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const obj1 = { a: 1, b: 2 };
+      const obj2 = obj1;
+      console.log(obj1 === obj2); // true
+      //객체를 직접 대입하는 경우 참조에 의한 할당이 이루어지므로 둘은 같은 데이터(주소)를 가지고 있다.
+
+      obj2.a = 100;
+      console.log(obj1.a); // 100
+      //obj2의 property를 수정하고, obj1를 출력해도 obj2 값과 동일하다.
+    </script>
+  </body>
+</html>
