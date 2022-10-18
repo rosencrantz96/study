@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grade = prompt("학년 입력", 0)
+        var score = prompt("점수 입력", 0)
+        var msg = "불합격입니다."
+
+        if (score > 100 && score < 0) {
+            msg = "에러입니다."
+        }
+
+        if (grade = 4) {
+            if (score >= 70) {
+                msg = "합격입니다."
+            }
+        } else {
+            if (score >= 60) {
+                msg = "합격입니다."
+            }
+        }
+        document.write(msg)
+    </script>
+</body>
+</html>

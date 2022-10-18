@@ -67,7 +67,7 @@ a {
 }
 
 .board_list th, td {
-    border-spacing: 0;
+    border-spacing: 0px;
     border-bottom: 1px solid #444;
     padding: 10px;
     text-align: center;

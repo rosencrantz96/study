@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        // 여러 개의 데이터를 한 번에 저장 
+        // index는 0부터 시작
+        let arr = ["hi", 1, "test", 2, 10]
+
+        //splice (인덱스 번호, 제거할 데이터 개수)
+        // arr.splice(1, 2);     
+        // console.log(arr)
+
+        // splice (인덱스 번호, 제거할 데이터 개수, 그 사이에 넣고 싶은 데이터) (넣고 싶은 데이터는 계속 추가 가능)   
+        // arr.splice(1, 2, '끼어들기', '끼어들기2')
+        // console.log(arr)
+        
+        // 데이터 추가! 콘솔 열어보면 데이터 하나 늘어나있다.
+        // arr.push("haseo")
+        // console.log(arr)
+
+        // 데이터의 길이(개수) 알려줌
+        // console.log(arr.length);
+
+        // 콘솔에 0번째 index 알려줌 
+        // console.log(arr[0]);
+
+        /* 
+        join(): , 로 나타냄 
+        join(""): 연결해서 나타냄 
+        join("-"): - 로 나타냄 
+        join은 문자열로 반환해줌! 이제 문자임. 
+        */
+        // const test = arr.join("")
+        // console.log(test)
+
+        // 맨 뒤에 애를 빼줌
+        // arr.pop();
+        // console.log(arr);
+
+        // 1부터 3까지를 잘라주는데... 3번 직전까지 잘라주는 거임 그래서 콘솔에는 1, 'test'만 찍힘 
+        // begin, end: begin 부터 end 전까지 
+        console.log(arr.slice(1,3));
+        // 얘는 2번 인덱스부터 끝까지 다 자르는거 
+        // end 값이 생략되면 begin부터 끝까지 다! 
+        console.log(arr.slice(2));
+
+        
+    </script>
+</body>
+</html>

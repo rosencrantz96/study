@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if: 만약에 ~라면
+        const date = new Date(); // 날짜, 시간 객체
+        const hour = date.getHours(); // 현재 시간 구하기
+        console.log(hour)
+
+        // if 괄호 안의 값(조건식)이 참이면 중괄호 값을 출력하고, 거짓이면 출력하지 않음. 
+        // if (hour < 12) {
+        //     alert('오전입니다.');
+        // }
+
+        // if (hour >= 12) {
+        //     alert('오후입니다.');
+        // }
+
+        // else: 그밖에라는 뜻이니까! 조건식이 거짓이면 else를 출력함. 
+        // 중첩도 됩니다! if문 안에 if문, else if도 여러개 사용 가능 
+            
+        // 위에서 출력되면! 아래꺼는 실행 안 됨. 거름망처럼 생각하면 됩니다용.
+        
+        // &&(and) : 두 개다 true면 true
+        if (hour >= 6 && hour < 12) { //6 ~ 11
+            alert('오전입니다.');
+        } else if (hour >= 12 && hour <= 18) { // 12 ~ 18 
+            alert('오후입니다.');
+        } else {
+            alert('저녁입니다.'); // 나머지 시간
+        }
+
+
+    </script>
+</body>
+</html>
