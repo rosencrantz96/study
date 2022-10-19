@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        const arr = [1, 2, 3, 4, 5]
+
+        // // ()  안이 true 여야 {} 안의 코드 실행: ()하는 동안~ {}
+        // while (i < arr.length) {
+        //     // index번호, 배열값 
+        //     console.log(`${i}: ${arr[i]}`);
+        //     // i = i + 1;
+        //     i++;
+        // }
+        
+        // do: ~하다. do 안에 있는 코드를 일단 먼저 실행! 그 다음에 while을 봐주는 것. 
+        // while의 조건식이 참이라면 다시 do로 돌아감. 거짓이 되면 그 때 끝! 
+        do {
+            console.log(`${i}`);
+            i++
+        } while (i < 10)
+
+    </script>
+</body>
+</html>
