@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year=new Date().getFullYear()) { //날짜와 연도 구하는 것임... 먼진 몰라도... 
+            return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)
+        }
+
+        let result = isLeapYear(2020)
+
+        if (result) {
+            console.log('윤년입니다.')
+        } else {
+            console.log('윤년이 아닙니다.')
+        }
+    </script>
+</body>
+</html>
