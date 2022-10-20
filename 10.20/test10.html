@@ -9,14 +9,13 @@
 <body>
     <script>
         let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        //메소드 체이닝
-        let result = numbers.filter(function(value){
-            // console.log(value)
-            return value % 2 === 0
-        })
-        .map(function(value){
-            return value * 2
-        })
+        // let result = numbers.filter(function(value){
+        //     return value % 2 === 0
+        // })
+
+        //es6형태에서 생략을 하다보니 이렇게 변함. 괄호, 중괄호, return 다 생략 가능. 
+        let result = numbers.filter(value => value % 2 === 0)
+        
 
         console.log(result)
     </script>

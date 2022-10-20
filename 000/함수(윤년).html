@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var year = prompt ('연도를 입력하세요')
+
+        function isLeapYear(year) {
+            return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0) 
+        }
+
+        let result = isLeapYear(year)
+
+        if (result) {
+            document.write('윤년입니다.')
+        } else {
+            document.write('윤년이 아닙니다.')
+        }
+
+    </script>
+</body>
+</html>
