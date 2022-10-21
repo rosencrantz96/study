@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date</title>
+</head>
+<body>
+<script>
+var DDay =  new Date(1998,4,10);
+document.write('내 생일은 ',DDay.getFullYear(),'년 ',DDay.getMonth(),'월 ',DDay.getDate(),'일 입니다.<br>'); // Month가 이미 지정되어 있어서 여기선 +1 할 필요가 없다 
+
+//
+DDay.setFullYear(1999); //set: 바꿔주는거! (get은 가져오는거였고)
+DDay.setMonth(8);
+
+//
+document.write('내 생일은 ',DDay.getFullYear(),'년 ',DDay.getMonth(),'월 ',DDay.getDate(),'일 입니다.<br>');
+
+</script>
+</body>
+</html>

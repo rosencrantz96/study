@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pet(nameVal, ageVal) { 
+            // 속성
+            this.name = nameVal 
+            this.age = ageVal
+
+
+            this.eat = function(food) {
+                console.log(`${this.name}이가 ${food}을(를) 먹습니다.`)
+            }
+            this.agePrint = function(ageVal) {
+                console.log(`${this.name}의 나이는 ${this.age}세 입니다.`)
+            }
+            this.kindPrint = function(kind) {
+                console.log(`이 고양이의 종류는 ${kind}입니다.`)
+            }
+            
+        }
+
+  
+        const pet = new Pet("구름", 5) // 객체 생성할 때 아예 주어지는 값!(속성) 이름과 나이는 이 객체에 포함된 속성!
+        const pet2 = new Pet("별", 10) 
+        const pet3 = new Pet("달", 7) 
+        const pet4 = new Pet("해", 9) 
+
+        pet.eat('밥')
+        pet.agePrint(5)
+        pet.kind('페르시안') // eat과 kind는 함수를 실현한 것! 따로 값을 추가? 넣어주는 것. 
+
+        pet2.eat('츄르')
+        pet2.agePrint(10)
+        pet2.kind('코숏')
+
+
+        pet3.eat('설탕')
+        pet3.agePrint(7)
+        pet3.kind('고등어')
+    
+        pet4.eat('연어')
+        pet4.agePrint(9)
+        pet4.kind('치즈 태비')
+
+    </script>
+</body>
+</html>

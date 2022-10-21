@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2. 객체 생성자 방식 (객체 만들 때는 첫 글자 대문자! 소문자로 써버리면 그건 함수라는 뜻임)
+        
+        // 객체 = 속성 + 메소드(함수)
+        function Pet(nameVal, ageVal, kindVal) {
+            // 속성
+            this.name = nameVal // this: 현재 있는 객체를 가리킨다. 
+            this.age = ageVal
+            this.kind = kindVal
+
+            // 메소드
+            this.eat = function(food) {
+                console.log(`${this.name}이가 ${food}을(를) 먹습니다.`)
+            }
+            this.agePrint = function(ageVal) {
+                console.log(`${this.name}의 나이는 ${this.age}세 입니다.`)
+            }
+            this.kindPrint = function(kindVal) {
+                console.log(`이 고양이의 종류는 ${this.kind}입니다.`)
+            }
+            
+        }
+
+        // 객체 생성 (객체 선언!)
+        // 객체를 쓰는 이유? 코드의 생산성이 높아진다.
+        // 객체가 생성되는 순간 속성에 값이 할당된다. 
+        const pet = new Pet("구름", 5, '페르시안') // 객체 안에 있는 걸 가져다 쓸 수 있다.
+        const pet2 = new Pet("별", 10, '코숏') 
+        const pet3 = new Pet("달", 7, '고등어') 
+        const pet4 = new Pet("해", 9, '치즈 태비') 
+
+        pet.eat('밥')
+        pet.agePrint(5)
+        pet.kindPrint('페르시안')
+
+        pet2.eat('츄르')
+        pet2.agePrint(10)
+        pet2.kindPrint('코숏')
+
+
+        pet3.eat('설탕')
+        pet3.agePrint(7)
+        pet3.kindPrint('고등어')
+    
+        pet4.eat('연어')
+        pet4.agePrint(9)
+        pet4.kindPrint('치즈 태비')
+
+    </script>
+</body>
+</html>
