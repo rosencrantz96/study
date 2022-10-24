@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="txt">안녕하세용</h1>
+    <h1 class="txt">안녕하세용</h1>
+    <h1 class="txt">안녕하세용</h1>
+    <h1 class="txt">안녕하세용</h1>
+    <script>
+        /*
+        // 태그 선택자, 클래스 선택자, 아이디 선택자... 등 다 사용 가능 
+        // document.querySelector('선택자') -> 해당 요소를 가져온다. 
+        // 쿼리 셀렉터는 요소 하나만 선택 가능 
+        const header = document.querySelector('.txt')
+        console.log(header)
+
+        // 요소.style.css속성(무조건 카멜 표기) =  'css속성값' (문자형으로 써야 합니다)
+        header.style.color = 'red'
+        header.style.backgroundColor = 'black'
+        header.style.padding = '10px'
+        */
+
+        // document.querySelectorAll('선택자') -> 해당 요소를 모두 가져온다. 
+        const headers = document.querySelectorAll('.txt')
+        console.log(headers)
+
+        // // 방법 1
+        // for (let i = 0; i < headers.length; i++) {
+        //     headers[i].style.color = 'red'
+        //     headers[i].style.backgroundColor = 'black'
+        //     // console.log(headers[i])
+        // }
+
+        // // 방법 2
+        // for (header of headers) {
+        //     header.style.color = 'red'
+        //     header.style.backgroundColor = 'black'
+        // }
+
+        // 방법 3
+        headers.forEach(function(header) {
+            header.style.color = 'red'
+            header.style.backgroundColor = 'black'
+        })
+    </script>
+</body>
+</html>

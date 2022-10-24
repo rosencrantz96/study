@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <span class="inner">테스트입니다.</span>
+        <span class="inner2">테스트입니다.</span>
+    </div>
+    <script>
+        const header = document.createElement('h1')
+        const inner = document.querySelector('.inner') // inner의 부모 box. 우리는 박스를 가져오고 싶으니까 inner를 써야 함 
+
+        // parentNode: 부모 태그를 선택해 준다. 
+        inner.parentNode.appendChild(header)
+
+        console.log(inner.nextSibling)
+        // 공백을 선택할 수도 있기 때문에 안 되면 두 번 써보기... 이상하네 
+        inner.nextSibling.nextSibling.innerHTML = 'test'
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            /* 클릭을 여러번 했을 때 글자가 선택되는 걸 방지 */
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 사용자가 웹상에서 일으킬 수 있는 모든 것들을 이벤트라고 합니다 -->
+    <h1>클릭횟수: 0</h1>
+    <script>
+        let counter = 0
+        const h1 = document.querySelector('h1')
+       
+        /*
+        // addEventListener('이벤트명', 함수)
+        h1.addEventListener('click', function(){ // es5
+            // 클릭했을 때 실행되길 원하는 코드
+            counter++
+            h1.textContent = `클릭횟수: ${counter}`
+        }) 
+        // h1.addEventListener('click', () => {}) // es6
+        */
+
+        const listener = function(){
+            counter++
+            h1.textContent = `클릭횟수: ${counter}`
+        }
+
+        h1.addEventListener('click', listener)
+        // removeEventListener('지우고 싶은 이벤트명', 콜백 함수)
+        h1.removeEventListener('click', listener)
+
+    </script>
+</body>
+</html>
