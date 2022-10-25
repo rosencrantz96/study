@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Square { 
+            #length // this.length를 private으로 사용하겠다고 정의한 것
+
+            constructor (length) {
+                this.length = length
+            }
+
+            get length () { // 값을 넘겨줌 (단순하게 넘겨주는 기능만 한다)
+                return this.#length
+            }
+
+            set length (length) { // 값을 세팅해줌 (얘도 단순. 한 줄로 끝나야 해요.) 
+                this.#length = length
+            }
+
+            get getPerimeter () {
+                return 4 * this.#length
+            }
+            get getArea () {
+                return this.#length * this.#length
+            } 
+        }
+
+        // private: 외부에서 접근하지 못하게 한다. 
+        const square = new Square(10)
+        // square.#length = -10 // 수정 못함
+        // console.log(`length: ${square.#length}`) //볼 수 없음 
+        console.log(`length: ${square.length}`) // get length 메소드를 실행하는 것!!!! 
+        console.log(`getPerimeter(): ${square.getPerimeter}`) 
+        console.log(`getArea(): ${square.getArea}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+  /* 초기화 태그 */
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+a {text-decoration: none !important;}
+image {border: 0;}
+ul {list-style: none;}
+header, footer, section {box-sizing: border-box;}
+
+.wrap {
+    background: wheat;
+}
+
+/* 0 ~ 766px */
+
+.header__nav {
+    max-width: 1200px;
+    background: #9de25c;
+    margin: 0 auto;
+    display: flex;
+    /* 디폴트 값이 row지만 명시적으로 표기해줌 */
+    flex-direction: row;
+}
+
+/* 로고 고정값! 화면이 줄어도 크기 유지 */
+.header__nav > h1 {
+    width: 100px;
+    height: 120px;
+}
+
+.header__nav > nav {
+    width: calc(100%-100px);
+    background: #ff6b57;
+    height: 120px;
+}
+
+.header__nav > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header__nav > .delivery-order {
+    width: 168px;
+}
+
+
+.footer {
+    height: 680px;
+    background: #474747;
+}
+
+/* 767 ~ 1023px */
+/* app, deli 부분이랑 딜리버리~주차공간 가로 정렬 */
+
+@media all and (min-width:767px) {
+    .guide__content {
+        flex-direction: row;
+    }
+
+    .store__content ul li {
+        width: 16.66%;
+    }
+}
+
+/* 1024px 이상 */
+
+@media all and (min-width:1024px) {
+
+}
