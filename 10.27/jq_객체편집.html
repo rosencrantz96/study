@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <h1>제목</h1>
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+    </div>
+    <div id="wrap2">
+        <h1>제목</h1>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script> 
+    <script>
+        $(function(){
+            // 태그 앞(before)이나 뒤(after)에 원하는 태그를 붙일 수 있다!
+            //$("#wrap p:eq(2)").after("<p>After</p>")
+            //$("#wrap p:eq(1)").before("<p>Before</p>")
+        
+            // $("<p>After</p>").insertAfter("#wrap p:eq(2)")
+            // $("<p>Before</p>").insertBefore("#wrap p:eq(1)")
+
+            // 내가 선택한 요소의 하위태그에서! 
+            // append: 맨 뒤, prepend: 맨 앞에 새로운 태그 생성 
+            // $("#wrap").append("<p>내용4</p>")
+            // $("#wrap").prepend("<p>내용0</p>")
+
+            // 뒤집어준거임!
+            // $("<p>내용4</p>").appendTo("#wrap")
+            // $("<p>내용0</p>").prependTo("#wrap")
+        
+            
+            // // console.log($("#wrap").children().clone())
+            // var copy = $('#wrap').children().clone()
+            // // append는 하위 태그에 붙여주는거! clone이 복제를 해왔어요
+            // $("#wrap2").append(copy)
+
+            // 해당 요소를 완전히 지워줌 
+            // $("#wrap").remove() // div가 완전히사라짐! 
+            // 하위 요소들을 지워줌. 약간... 쓰레기통 비우듯이... 
+            // $("#wrap").empty() // div는 남아있는데 하위요소만 사라짐
+
+            // 기존 태그를 지우고 다른거로 바꿔줌! h1 부분을 다 바꿔줌
+            // $("h1").replaceWith("<h3>헤더바꿈</h3>")
+            // $("<h3>헤더바꿈</h3>").replaceAll("h1") // 똑같은건데 걍 바꿔서 써주는거
+        })
+    </script>
+</body>
+</html> 

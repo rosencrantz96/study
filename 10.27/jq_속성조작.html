@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aqua {background-color: aqua;}
+        .red {background-color: red;}
+        .green {background-color: green;}
+        .yellow {background-color: yellow;}
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="list_1">
+                <span class="child1">1번</span>            
+                <span>2번</span>            
+                <span class="child3">3번</span>            
+                <span>4번</span>            
+                <span class="child5">5번</span>            
+            </li>
+            <li id="list_2">리스트2</li>
+            <li id="list_3">리스트3</li>
+        </ul>
+        <a href="http://www.naver.com" target="_blank">클릭</a>
+        <p class="green">안녕하세요. 안녕하세요.</p>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script> 
+    <script>
+        $(function(){
+            // html 태그를 가져옴
+            // var result1 = $(".list_1").html();
+            // console.log(result1);
+            // $(".list_1").html("<a href='#'>클릭</a>");
+
+            //텍스트만 가져옴
+            // var result1 = $(".list_1").text();
+            // console.log(result1);
+            // $(".list_1").text("<a href='#'>클릭</a>");
+
+            // attr: attribute - 태그에 있는 속성값을 가져오고 바꾸는 기능
+            // console.log($("a").attr("target"))
+            // $("a").attr("href", "https://www.ezenac.co.kr/")
+            // $("a").attr({
+            //     "href" : "https://www.ezenac.co.kr/",
+            //     "target" : "_parent"
+            // })
+            // 속성을 삭제해줌 
+            // $("a").removeAttr("target")
+                
+            // css 클래스 추가
+            // $("p").addClass("aqua")
+            // 클래스를 지우는 것. 지우고 싶은 클래스 이름 쓰면 됨. 
+            // $("p").removeClass("red")
+
+            // 클래스를 바꾸는 것 (있으면 없게하고, 없으면 있게 만든다) 
+            // $("p").toggleClass("green")
+            // 클래스를 가지고 있는지 묻는 것. 
+            console.log($("p").hasClass("green")) // true
+
+
+        })
+    </script>
+</body>
+</html> 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer_wrap">
+        <h1>콘텐츠 탐색 선택자</h1>
+        <section id="inner1">
+            <h1>이너1</h1>
+            <p class="test"><span>내용1</span></p>
+            <p><span>내용2</span></p>
+            <p><span>내용3</span></p>
+        </section>
+        <section id="inner2">
+            <h1>이너2</h1>
+            <p><span>내용4</span></p>
+            <p><span>내용5</span></p>
+            <p class="test2" style="display: block"><span>내용6</span></p>
+        </section>
+        <select name="" id=""></select>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            //p태그 중 내용1을 포함하고 있는 애를 선택
+            // $("#inner1 p:contains(내용1)").css({"background-color": "#ff0"})
+            
+            // p 태그 중 span 태그를 가지고있는 애들을 선택하는 것
+            // $("#inner1 p:has(span)").css({"background-color": "red"})
+            
+            // 모든 콘텐츠에 css를 적용하는 것
+            // $("#outer_wrap").contents().css({"background-color": "red"}) 
+            
+            // first가 아닌 것만 선택(not이니깐)
+            // $("#inner2 p").not(":first").css({"background-color": "red"})
+
+            // inner1의 하위에서 test 클래스를 가지는 애를 찾음
+            // $("#inner1").find('.test').css({"background-color": "red"})
+            
+
+            // is => 'visible' 한지 묻는것 현재 보이니까 콘솔에 true가 찍힘
+            console.log($('.test2').is(":visible")) 
+
+        })
+    </script>
+</body>
+</html>
