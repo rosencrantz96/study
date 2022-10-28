@@ -1,0 +1,1 @@
+https://api.openweathermap.org/data/2.5/weather?appid=d18cab0e7fb50e828123a883ae572f78&units=metric&lang=kr&q=seoul
