@@ -11,81 +11,155 @@
         margin: 0;
         padding: 0;
     }
-    ul {list-style: none;}
-    header, footer, section {box-sizing: border-box;}
 
-    header {
+    ul {list-style: none;}
+
+    header, footer {
         background: wheat;
     }
 
     .wrap {
         background: beige;
+        padding-top: 100px;
     }
 
-    .promotion {
-        background: lightblue;
-        width: 800px;
-        height: 200px;
+    section .con {
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 100%;
     }
 
-    .posters > div > ul {
+    .slider {
+        height: 500px;
+    }
+
+    .slider__content {
+        background: palevioletred;
+    }
+
+    .poster {
+        height: 605px;
+    }
+
+    .poster__content {
+        background: brown;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-around;
     }
 
-    .poster__content1 {
-        background: blanchedalmond;
-        width: 100px;
-        height: 150px; 
-    }
-    .poster__content2 {
-        background: blanchedalmond;
-        width: 100px;
-        height: 150px; 
-    }
-    .poster__content3 {
-        background: blanchedalmond;
-        width: 100px;
-        height: 150px; 
-    }
-    .poster__content4 {
-        background: blanchedalmond;
-        width: 100px;
-        height: 150px; 
-    }
-    .poster__content5 {
-        background: blanchedalmond;
-        width: 100px;
-        height: 150px; 
+    .poster__content div {
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        background: plum;
     }
 
+    .banner {
+        height: 200px;
+    }
+
+    .banner__content {
+        background: darkblue;
+    }
+
+    .sns {
+        height: 100px;
+    }
+
+    .sns__content {
+        background: seagreen;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sns__content > ul {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .sns__content > ul li {
+        background: darkolivegreen;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .news {
+        height: 605px;
+    }
+
+    .news__wrap {
+        height: 500px;
+    }
+
+    .news__content {
+        background: aquamarine;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .news__content div {
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        background: wheat;
+    }
+
+    .news__page {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .news__page a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        box-sizing: border-box;
+        border-left: 0;
+        line-height: 32px;
+    }
+
+    .news__page a.bt {
+        font-size: 1.2rem;
+        letter-spacing: -1px;
+    }
+
+    .news__page a.num {
+        font-size: 1.4rem;
+    }
 </style>
 <body>
     <header>
-       
+       <h1>헤더입니다.</h1>
     </header>
     <main class="wrap">
         <section class="slider">
-            <div class="slider__content">개봉 임박 영화 포스터 홍보(블랙 팬서: 와칸다 포에버, 앤트맨과 와스프: 퀀텀 매니아)</div>
+            <div class="slider__content con"><h1>개봉 임박 영화 포스터 홍보(블랙 팬서: 와칸다 포에버, 앤트맨과 와스프: 퀀텀 매니아)</h1></div>
         </section>
-        <section class="posters">
-            <div>
-                <ul class="poster_contents">
-                    <li><div class="poster__content1">앤트맨과 와스프: 퀀텀 매니아</div></li>
-                    <li><div class="poster__content2">블랙 팬서: 와칸다 포에버</div></li>
-                    <li><div class="poster__content3">토르: 러브 앤 썬더</div></li>
-                    <li><div class="poster__content4">닥터 스트레인지: 대혼돈의 멀티버스</div></li>
-                    <li><div class="poster__content5">스파이더맨: 노 웨이 홈</div></li>
-                </ul>
+        <section class="poster">
+            <div class="poster__content con" >
+                    <div>앤트맨과 와스프: 퀀텀 매니아</div>
+                    <div>블랙 팬서: 와칸다 포에버</div>
+                    <div>토르: 러브 앤 썬더</div>
+                    <div>닥터 스트레인지: 대혼돈의 멀티버스</div>
             </div>
         </section>
-        <section class="ott_service">
-            <div>
+        <section class="banner">
+            <div class="banner__content con">
                 <a href="#">디즈니 플러스 스트리밍</a>
             </div>
         </section>
         <section class="sns">
-            <div class="sns__content">
+            <div class="sns__content con">
                 <ul>
                     <li>facebook</li>
                     <li>twitter</li>
@@ -93,44 +167,22 @@
                 </ul>
             </div>
         </section>
-        <section class="news_wrap">
-            <div class="news__contents">
-                <div class="news__contents1">뉴스 1</div>
-                <div class="news__contents2">뉴스 2</div>
-                <div class="news__contents3">뉴스 3</div>
-                <div class="news__contents4">뉴스 4</div>
-                <div class="news__contents5">뉴스 5</div>
-            </div>
-            <div class="news_page">
-                <a href="#" class="bt first">&lt;&lt;</a>
-                <a href="#" class="bt prev">&lt;</a>
-                <a href="#" class="num on ">1</a>
-                <a href="#" class="num">2</a>
-                <a href="#" class="num">3</a>
-                <a href="#" class="num">4</a>
-                <a href="#" class="num">5</a>
-                <a href="#" class="bt next">&gt;</a>
-                <a href="#" class="bt last">&gt;&gt;</a>
-            </div>
-        </section>
-        <section class="movie_wrap">
-            <div class="movie_contents">
-                <div class="movie__content1">영화1</div>
-                <div class="movie__content2">영화2</div>
-                <div class="movie__content3">영화3</div>
-                <div class="movie__content4">영화4</div>
-                <div class="movie__content5">영화5</div>
-            </div>
-            <div class="movie_page">
-                <a href="#" class="bt first">&lt;&lt;</a>
-                <a href="#" class="bt prev">&lt;</a>
-                <a href="#" class="num on ">1</a>
-                <a href="#" class="num">2</a>
-                <a href="#" class="num">3</a>
-                <a href="#" class="num">4</a>
-                <a href="#" class="num">5</a>
-                <a href="#" class="bt next">&gt;</a>
-                <a href="#" class="bt last">&gt;&gt;</a>
+        <section class="news">
+            <div class="news__wrap">
+                <div class="news__content con">
+                    <div>마블 소식1</div>
+                    <div>마블 소식2</div>
+                    <div>마블 소식3</div>
+                </div>
+                <div class="news__page">
+                    <a href="#" class="bt first">&lt;&lt;</a>
+                    <a href="#" class="bt prev">&lt;</a>
+                    <a href="#" class="num on ">1</a>
+                    <a href="#" class="num">2</a>
+                    <a href="#" class="num">3</a>
+                    <a href="#" class="bt next">&gt;</a>
+                    <a href="#" class="bt last">&gt;&gt;</a>
+                </div>
             </div>
         </section>
     </main>
