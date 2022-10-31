@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마블 영화 소개 페이지</title>
+    <link rel="stylesheet" href="../team 4 project/css/common.css">
+    <link rel="stylesheet" href="../team 4 project/css/marvel_movieClip.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+</head>
+<body>
+<!-- 헤더창 -->
+    <header>
+           
+    </header>
+    <main class="wrap">
+        <!-- 업다운 버튼 -->
+        <div class="fixed__btn">
+            <div class="box__updown">
+                <a class="btn__up" href="#">UP</a>
+            </div>
+            <div class="box__updown">
+                <a class="btn__down" href="#">DOWN</a>
+            </div>
+        </div>
+        <!-- 개봉 예정 영화 슬라이더 -->
+        <section class="slider">
+            <div class="slider__content con">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper_slide slide1"></div>
+                        <div class="swiper_slide slide2"></div>
+                    </div>
+                </div>
+                <!-- navigation 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- pagination 버튼 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- 최신 영화 포스터 -->
+        <section class="poster">
+            <div class="poster__content con" >
+                    <div>앤트맨과 와스프: 퀀텀 매니아</div>
+                    <div>블랙 팬서: 와칸다 포에버</div>
+                    <div>토르: 러브 앤 썬더</div>
+                    <div>닥터 스트레인지: 대혼돈의 멀티버스</div>
+            </div>
+        </section>
+        <!-- ott 서비스 -->
+        <section class="banner">
+            <div class="banner__content con">
+                <a href="#">디즈니 플러스 스트리밍</a>
+            </div>
+        </section>
+        <!-- 마블 sns -->
+        <section class="sns">
+            <div class="sns__content con">
+                <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+        </section>
+        <!-- 마블 소식 -->
+        <section class="news">
+            <div class="news__wrap">
+                <div class="news__content con">
+                    <div>마블 소식1</div>
+                    <div>마블 소식2</div>
+                    <div>마블 소식3</div>
+                </div>
+                <div class="news__page">
+                    <a href="#" class="bt first">&lt;&lt;</a>
+                    <a href="#" class="bt prev">&lt;</a>
+                    <a href="#" class="num on ">1</a>
+                    <a href="#" class="num">2</a>
+                    <a href="#" class="num">3</a>
+                    <a href="#" class="bt next">&gt;</a>
+                    <a href="#" class="bt last">&gt;&gt;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마블 영화 소개 페이지</title>
-</head>
-<style>
+    <title>Upcoming Films</title>
+    <style>
     * {
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
     }
 
     ul {list-style: none;}
@@ -42,7 +41,7 @@
     }
 
     .poster__content {
-        background: brown;
+        /* background: brown; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -53,7 +52,7 @@
         width: 300px;
         height: 400px;
         text-align: center;
-        background: plum;
+        /* background: plum; */
     }
 
     .banner {
@@ -104,7 +103,7 @@
         align-items: center;
         justify-content: space-around;
     }
-    
+
     .news__content div {
         width: 300px;
         height: 400px;
@@ -136,7 +135,8 @@
     .news__page a.num {
         font-size: 1.4rem;
     }
-</style>
+    </style>
+</head>
 <body>
     <header>
        <h1>헤더입니다.</h1>
@@ -147,10 +147,30 @@
         </section>
         <section class="poster">
             <div class="poster__content con" >
-                    <div>앤트맨과 와스프: 퀀텀 매니아</div>
-                    <div>블랙 팬서: 와칸다 포에버</div>
-                    <div>토르: 러브 앤 썬더</div>
-                    <div>닥터 스트레인지: 대혼돈의 멀티버스</div>
+                <div>
+                    <h3>Ant-Man and The Wasp: Quantumania</h3>
+                    <a href="#">
+                        <img src="./img/poster1.jpg" alt="mvposter1">
+                    </a>    
+                </div>
+                <div>
+                    <h3>Black Panther: Wakanda Forever</h3>
+                    <a href="#">
+                        <img src="./img/poster2.jpg" alt="mvposter2">
+                    </a>
+                </div>
+                <div>
+                    <h3>Thor: Love and Thunder</h3>
+                    <a href="#">
+                        <img src="./img/poster3.jpg" alt="mvposter3">
+                    </a>
+                </div>
+                <div>
+                    <h3>Doctor Strange in the<br />Multiverse of Madness</h3>
+                    <a href="#">
+                        <img src="./img/poster4.jpg" alt="mvposter4">
+                    </a>
+                </div>
             </div>
         </section>
         <section class="banner">
