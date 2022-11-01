@@ -2,7 +2,7 @@
 @import url('./common.css');
 
 .wrap {
-    /* background-color: #151515; */
+    background-color: #151515;
     padding-top: 100px;
 }
 
@@ -19,6 +19,16 @@ section .con {
 
 .slider__content {
     background-color: #151515;
+}
+
+.slider__content > h1 {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0px 20px;
+    color: #fff;
+    /* text-shadow: 0 0 15px rgba(236, 29, 36,.5), 0 0 10px rgba(236, 29, 36,.5); */
 }
 
 .slider__content .swiper-slide.slide1 {
@@ -76,19 +86,21 @@ section .con {
     height: 605px;
 }
 
-/* .youtube__content {
+.youtube__content {
     background-color: #5a5a5a;
-} */
+}
 
 
 /* ============================== */
-.character {
-    height: 650px;
-}
+.character__wrap {
+    height: 605px;
+    /* background: red; */
+} 
+
 
 .character__content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #151515;
     justify-content: center;
 }
@@ -100,7 +112,6 @@ section .con {
     text-align: center;
     padding: 20px 0px 20px;
     color: #fff;
-    text-shadow: 0 0 15px rgba(236, 29, 36,.5), 0 0 10px rgba(236, 29, 36,.5);
 }
 
 .character__poster {
@@ -137,7 +148,7 @@ section .con {
 
 .mainchar_poster img {
     height: 450px;
-}
+} 
 
 /* ============================== */
 .poster {
