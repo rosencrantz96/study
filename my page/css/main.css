@@ -83,29 +83,11 @@ section .con {
 
 /* ============================== */
 .youtube {
-    height: 605px;
+    height: 705px;
+    margin-top: 100px;
 }
 
-.youtube__content {
-    background-color: #5a5a5a;
-}
-
-
-/* ============================== */
-.character__wrap {
-    height: 605px;
-    /* background: red; */
-} 
-
-
-.character__content {
-    display: flex;
-    flex-direction: row;
-    background-color: #151515;
-    justify-content: center;
-}
-
-.character__content > h1 {
+.youtube__content > h1 {
     border-bottom: 1px solid #fff;
     font-weight: bold;
     font-size: 3rem;
@@ -114,12 +96,40 @@ section .con {
     color: #fff;
 }
 
+.youtube__content {
+    background-color: #151515;
+}
+
+
+/* ============================== */
+.character__wrap {
+    height: 680px;
+    margin-top: 100px;
+} 
+
+.character__wrap > h1 {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0px 20px;
+    color: #fff;
+}
+
+.character__content {
+    display: flex;
+    flex-direction: row;
+    background-color: #151515;
+    justify-content: center;
+}
+
 .character__poster {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 50px 0px;
-    align-items: flex-end;
+    padding: 10px 50px;
+    text-align: center;
+    align-items: center;
 }
 
 .character__poster .mainchar_poster img {
@@ -151,15 +161,29 @@ section .con {
 } 
 
 /* ============================== */
-.poster {
-    height: 605px;
+.mustsee {
+    height: 700px;
 }
 
-.poster__content {
+.mustsee__content > h1 {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0px 20px;
+    color: #fff;
+}
+
+.msposter__wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #151515;
     justify-content: center;
+}
+
+/* ============================== */
+.poster {
+    height: 605px;
 }
 
 .poster__content > h1 {
@@ -169,7 +193,13 @@ section .con {
     text-align: center;
     padding: 20px 0px 20px;
     color: #fff;
-    text-shadow: 0 0 15px rgba(236, 29, 36,.5), 0 0 10px rgba(236, 29, 36,.5);
+}
+
+.poster__content {
+    display: flex;
+    flex-direction: column;
+    background-color: #151515;
+    justify-content: center;
 }
 
 .mv__poster {
@@ -204,7 +234,24 @@ section .con {
 
 /* ============================== */
 .ott {
-    height: 500px;
+    height: 700px;
+}
+
+.ott__content > h1 {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0px 20px;
+    color: #fff;
+}
+
+.ott__content > h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0px 20px;
+    color: #fff;
 }
 
 .ott__content {
@@ -215,6 +262,11 @@ section .con {
 
 }
 
+.ott__content img {
+    width: 1280px;
+    height: 550px;
+    object-fit: cover;
+}
 
 
 
