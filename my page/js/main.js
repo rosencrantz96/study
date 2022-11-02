@@ -11,4 +11,7 @@ var swiper = new Swiper(".mySwiper", {
       delay: 2500,
     },
     speed: 800
-  });
+  })
+  ;
+
+  
