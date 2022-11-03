@@ -28,7 +28,6 @@ section .con {
     text-align: center;
     padding: 20px 0px 20px;
     color: #fff;
-    /* text-shadow: 0 0 15px rgba(236, 29, 36,.5), 0 0 10px rgba(236, 29, 36,.5); */
 }
 
 
@@ -139,26 +138,58 @@ section .con {
     align-items: center;
 }
 
-.main_character img {
+/* .main_character img {
     transition: all 0.2s linear;
 }
 
 .main_character img:hover {
     transform: scale(1.1);
-}
+} */
 
 .main_character img {
     height: 450px;
 } 
 
+.main_character a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_character figcaption {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.main_character figcaption:after {
+    content: '';
+    display: block;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+}
+
+.main_character a:hover figcaption, .main_character a:focus figcaption {
+    opacity: 1;
+}
+
 /* ============================== */
-.mustsee {
-    height: 750px;
-    /* width: 1280px; */
+.essential {
+    height: 605px;
     margin-top: 50px;
 }
 
-.mustsee_content > h1 {
+.essential_content > h1 {
     border-bottom: 1px solid #fff;
     font-weight: bold;
     font-size: 3rem;
@@ -167,27 +198,23 @@ section .con {
     color: #fff;
 }
 
-.mustsee_content {
+.essential_content {
     display: flex;
     flex-direction: column;
     background-color: #151515;
     justify-content: center;
 }
 
-
-.ms_posters {
+.essential_poster {
     display: flex;
     flex-direction: row;
-    background-color: #151515;
-    /* justify-content: space-around; */
-    /* padding: 50px 50px; */
-    /* text-align: center; */
-    /* align-items: flex-end; */
-    transition-property: transform;
-    transition-duration: 1s;
+    justify-content: space-around;
+    padding: 50px 50px 0px;
+    text-align: center;
+    align-items: flex-end;
 }
 
-.ms_posters h3 {
+.essential_poster h3 {
     padding: 5px 0 5px;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -195,25 +222,18 @@ section .con {
     text-align: center;
 }
 
-button {
-    width: 100px;
-    height: 30px;
-    border: none;
-    color: white;
-    background-color: blueviolet;
+.essential_poster img {
+    transition: all 0.2s linear;
 }
 
-button:disabled {
-    background-color: gray;
+.essential_poster img:hover {
+    transform: scale(1.1);
 }
 
-.prev {
-    float: left;
+.essential_poster img {
+    height: 260px;
 }
 
-.next {
-    float: right;
-}
 /* ============================== */
 .poster {
     height: 605px;
