@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,77 +8,80 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- 애니메이트 -->
     <!-- <link rel="stylesheet" href="./library/animate/animate.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-</head>
-<body>
-   <!-- 헤더창 -->
-   <header class="header">
-    <div class="header_nav">
-      <h1>
-        <a href="./index.html">
-          <img src="./img/marvel_logo.png" alt="logo" />
-        </a>
-      </h1>
-      <!-- 모바일 로그인 -->
-      <div class="menu_Mlogin">
-        <a href="./junghwan/marvel/login.html">SIGN IN | JOIN</a>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- 헤더창 -->
+    <header class="header">
+      <div class="header_nav">
+        <h1>
+          <a href="./index.html">
+            <img src="./img/marvel_logo.png" alt="logo" />
+          </a>
+        </h1>
+        <!-- 모바일 로그인 -->
+        <div class="menu_Mlogin">
+          <a href="./junghwan/marvel/login.html">SIGN IN | JOIN</a>
+        </div>
+        <!-- 메뉴박스 -->
+        <div class="menu">
+          <nav>
+            <ul class="menu_main">
+              <li class="main_list">
+                <a>UNIVERSE</a>
+                <div>
+                  <ul class="list_drop animate__animated animate__fadeIn">
+                    <li><a href="./ukzi/wrdvw.html">WORLDVIEW</a></li>
+                    <li><a>CINEMATIC</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main_list">
+                <a>CHARACTERS</a>
+                <div>
+                  <ul class="list_drop animate__animated animate__fadeIn">
+                    <li><a href="#">ALL CHARACTERS</a></li>
+                    <li><a>TEAMS & GROUPS</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main_list">
+                <a>NEWS</a>
+                <div>
+                  <ul class="list_drop animate__animated animate__fadeIn">
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">STORE</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main_list">
+                <a>MOVIES</a>
+                <div>
+                  <ul class="list_drop animate__animated animate__fadeIn">
+                    <li>
+                      <a href="./sookyoung/UpcomingFilms.html">RELEASE</a>
+                    </li>
+                    <li>
+                      <a href="./pages/marvel_movieClip.html">MOVIE CLIP</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 로그인박스 -->
+        <div class="menu_login">
+          <a href="./junghwan/marvel/login.html">SIGN IN | JOIN</a>
+        </div>
       </div>
-      <!-- 메뉴박스 -->
-      <div class="menu">
-        <nav>
-          <ul class="menu_main">
-            <li class="main_list">
-              <a>UNIVERSE</a>
-              <div>
-                <ul class="list_drop animate__animated animate__fadeIn">
-                  <li><a href="./ukzi/wrdvw.html">WORLDVIEW</a></li>
-                  <li><a>CINEMATIC</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="main_list">
-              <a>CHARACTERS</a>
-              <div>
-                <ul class="list_drop animate__animated animate__fadeIn">
-                  <li><a href="#">ALL CHARACTERS</a></li>
-                  <li><a>TEAMS & GROUPS</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="main_list">
-              <a>NEWS</a>
-              <div>
-                <ul class="list_drop animate__animated animate__fadeIn">
-                  <li><a href="#">NEWS</a></li>
-                  <li><a href="#">STORE</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="main_list">
-              <a>MOVIES</a>
-              <div>
-                <ul class="list_drop animate__animated animate__fadeIn">
-                  <li>
-                    <a href="./sookyoung/UpcomingFilms.html">RELEASE</a>
-                  </li>
-                  <li>
-                    <a href="./pages/marvel_movieClip.html">MOVIE CLIP</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- 로그인박스 -->
-      <div class="menu_login">
-        <a href="./junghwan/marvel/login.html">SIGN IN | JOIN</a>
-      </div>
-    </div>
-    <div class="header_panel"></div>
+      <div class="header_panel"></div>
     </header>
     <main class="wrap">
-        <!-- 업다운 버튼 -->
+      <!-- 업다운 버튼 -->
       <div class="fixed_btn">
         <div class="box_updown">
           <a class="btn_up">UP</a>
@@ -87,186 +90,201 @@
           <a class="btn_down">DOWN</a>
         </div>
       </div>
-        <!-- 슬라이더 -->
-        <section class="slider">
-            <div class="slider_content con">
-                <h1>NEW RELEASE</h1> 
-                <div class="swiper mySwiper">                       
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1"></div>
-                        <div class="swiper-slide slide2"></div>
-                        <div class="swiper-slide slide3"></div>
-                        <div class="swiper-slide slide4"></div>
-                        <div class="swiper-slide slide5"></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- pagination 버튼 -->
-                    <div class="swiper-pagination"></div>
-                </div>
+      <!-- 슬라이더 -->
+      <section class="slider">
+        <div class="slider_content con">
+          <h1>NEW RELEASE</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1"></div>
+              <div class="swiper-slide slide2"></div>
+              <div class="swiper-slide slide3"></div>
+              <div class="swiper-slide slide4"></div>
+              <div class="swiper-slide slide5"></div>
             </div>
-        </section>
-        <!-- 유튜브 (블랙팬서 메인 예고편) -->
-        <section class="youtube">
-            <div class="youtube_content con">
-                <h1>MAIN TRAILER</h1>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ku9l1fHo5XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <!-- 개봉 예정작 캐릭터 소개 -->
-        <section class="character">
-            <div class="character_content con">
-                <h1>ABOUT CHARACTERS</h1>
-                <div class="main_character">
-                    <div>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/main1.jpg" alt="main1">
-                                <figcaption>와칸다의 공주이자 티찰라의 여동생.<br />2대 블랙 팬서</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/main2.jpg" alt="main2">
-                                <figcaption>와칸다의 외부 스파이</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/main3.jpg" alt="main3">
-                                <figcaption>탈로칸의 왕<br />와칸다의 새로운 위협</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 필수 관람 영화 안내 -->
-        <section>
-            <div class="essential">
-                <div class="essential_content con">
-                    <h1>Must-see Movies</h1>
-                    <div class="essential_poster">
-                        <div>
-                            <h3>캡틴 아메리카: 시빌 워</h3>
-                            <a href="./EssentialMV1.html">
-                                <img src="./img/essential01.jpg" alt="poster1">
-                            </a>
-                        </div>
-                        <div>
-                            <h3>블랙 팬서</h3>
-                            <a href="./EssentialMV2.html">
-                                <img src="./img/essential02.jpg" alt="poster2">
-                            </a>
-                        </div>
-                        <div>
-                            <h3>어벤져스: 인피니티 워</h3>
-                            <a href="./EssentialMV3.html">
-                                <img src="./img/essential03.jpg" alt="poster3">
-                            </a>
-                        </div>
-                        <div>
-                            <h3>어벤져스: 엔드게임</h3>
-                            <a href="./EssentialMV4.html">
-                                <img src="./img/essential04.jpg" alt="poster4">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 최신 영화 포스터 -->
-        <section class="poster">
-            <div class="poster_content con" >
-                <h1>Marvel Phase 4's Latest Films</h1>
-                <div class="mv_poster">
-                    <div>
-                        <h3>Black Panther<br />: Wakanda Forever</h3>
-                        <a href="https://www.marvel.com/movies/black-panther-wakanda-forever" alt="mvposter2">
-                            <img src="./img/poster01.jpg" alt="mvposter2">
-                        </a>
-                    </div>
-                    <div>
-                        <h3>Thor<br />: Love and Thunder</h3>
-                        <a href="https://www.marvel.com/movies/thor-love-and-thunder" alt="mvposter3">
-                            <img src="./img/poster02.jpg" alt="mvposter3">
-                        </a>
-                    </div>
-                    <div>
-                        <h3>Doctor Strange in the<br />Multiverse of Madness</h3>
-                        <a href="https://www.marvel.com/movies/doctor-strange-in-the-multiverse-of-madness" alt="mvposter4">
-                            <img src="./img/poster03.jpg" alt="mvposter4">
-                        </a>
-                    </div>
-                    <div>
-                        <h3>Spider-Man<br />: No Way Home</h3>
-                        <a href="https://www.marvel.com/movies/spider-man-no-way-home" alt="mvposter1">
-                            <img src="./img/poster04.jpg" alt="mvposter1">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 스트리밍 서비스 -->
-        <section class="ott">
-            <div class="ott_content con">
-                <h1>DISNEY PLUS</h1>
-                <h3>Sign up for Disney Plus, if you want to see more movies!</h3>
-                <a href="https://www.disneyplus.com/home">
-                    <img src="./img/ott_img.jpg" alt="ottservice">
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer_area">
-          <div class="ft_level1">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- pagination 버튼 -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 유튜브 (블랙팬서 메인 예고편) -->
+      <section class="youtube">
+        <div class="youtube_content con">
+          <h2>MAIN TRAILER</h2>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/ku9l1fHo5XE"
+            title="YouTube video player"
+            style="border: 0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- 개봉 예정작 캐릭터 소개 -->
+      <section class="character">
+        <div class="character_content con">
+          <h2>ABOUT CHARACTERS</h2>
+          <div class="main_character">
             <div>
-              <a href="./index.html">
-                <img src="./img/marvel_logo.png" alt="logo" />
+              <a href="#">
+                <figure>
+                  <img src="./img/main1.jpg" alt="main1" />
+                  <figcaption>
+                    와칸다의 공주이자 티찰라의 여동생.<br />2대 블랙 팬서
+                  </figcaption>
+                </figure>
               </a>
             </div>
             <div>
-              <ul>
-                <li><a>ABOUT MARVEL</a></li>
-                <li><a>HELP/FAQS</a></li>
-                <li><a>CAREERS</a></li>
-                <li><a>INTERNSHIP</a></li>
-              </ul>
+              <a href="#">
+                <figure>
+                  <img src="./img/main2.jpg" alt="main2" />
+                  <figcaption>와칸다의 외부 스파이</figcaption>
+                </figure>
+              </a>
             </div>
             <div>
-              <ul>
-                <li><a>ADVERTISING</a></li>
-                <li><a>DISNEY</a></li>
-                <li><a>MARVELHQ.COM</a></li>
-                <li><a>REDEEM DIGITAL COMICS</a></li>
-              </ul>
+              <a href="#">
+                <figure>
+                  <img src="./img/main3.jpg" alt="main3" />
+                  <figcaption>탈로칸의 왕<br />와칸다의 새로운 위협</figcaption>
+                </figure>
+              </a>
             </div>
           </div>
-          <div class="ft_level2">
-            <nav>
-              <a>Terms of Use</a>
-              <a>Privacy Policy</a>
-              <a>Your California Privacy Rights</a>
-              <a>Do Not Sell My Personal Information</a>
-              <a>Children's Online Privacy Policy</a>
-              <a>License Agreement</a>
-              <a>Interest-Based Ads</a>
-              <a>Marvel Insider Terms</a>
-              <span>©2022 MARVEL</span>
-            </nav>
+        </div>
+      </section>
+      <!-- 필수 관람 영화 안내 -->
+      <section>
+        <div class="essential">
+          <div class="essential_content con">
+            <h2>Must-see Movies</h2>
+            <div class="essential_poster">
+              <div>
+                <h3>캡틴 아메리카: 시빌 워</h3>
+                <a href="./EssentialMV1.html">
+                  <img src="./img/essential01.jpg" alt="poster1" />
+                </a>
+              </div>
+              <div>
+                <h3>블랙 팬서</h3>
+                <a href="./EssentialMV2.html">
+                  <img src="./img/essential02.jpg" alt="poster2" />
+                </a>
+              </div>
+              <div>
+                <h3>어벤져스: 인피니티 워</h3>
+                <a href="./EssentialMV3.html">
+                  <img src="./img/essential03.jpg" alt="poster3" />
+                </a>
+              </div>
+              <div>
+                <h3>어벤져스: 엔드게임</h3>
+                <a href="./EssentialMV4.html">
+                  <img src="./img/essential04.jpg" alt="poster4" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-  
-      <script src="./js/jquery-3.6.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  
-      <script src="./js/main.js"></script>
-      <script src="./js/common.js"></script>
-</body>
+      </section>
+      <!-- 최신 영화 포스터 -->
+      <section class="poster">
+        <div class="poster_content con">
+          <h2>Marvel Phase 4's Latest Films</h2>
+          <div class="mv_poster">
+            <div>
+              <h3>Black Panther<br />: Wakanda Forever</h3>
+              <a
+                href="https://www.marvel.com/movies/black-panther-wakanda-forever"
+              >
+                <img src="./img/poster01.jpg" alt="mvposter2" />
+              </a>
+            </div>
+            <div>
+              <h3>Thor<br />: Love and Thunder</h3>
+              <a href="https://www.marvel.com/movies/thor-love-and-thunder">
+                <img src="./img/poster02.jpg" alt="mvposter3" />
+              </a>
+            </div>
+            <div>
+              <h3>Doctor Strange in the<br />Multiverse of Madness</h3>
+              <a
+                href="https://www.marvel.com/movies/doctor-strange-in-the-multiverse-of-madness"
+              >
+                <img src="./img/poster03.jpg" alt="mvposter4" />
+              </a>
+            </div>
+            <div>
+              <h3>Spider-Man<br />: No Way Home</h3>
+              <a href="https://www.marvel.com/movies/spider-man-no-way-home">
+                <img src="./img/poster04.jpg" alt="mvposter1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 스트리밍 서비스 -->
+      <section class="ott">
+        <div class="ott_content con">
+          <h2>DISNEY PLUS</h2>
+          <h3>Sign up for Disney Plus, if you want to see more movies!</h3>
+          <a href="https://www.disneyplus.com/home">
+            <img src="./img/ott_img.jpg" alt="ottservice" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_area">
+        <div class="ft_level1">
+          <div>
+            <a href="./index.html">
+              <img src="./img/marvel_logo.png" alt="logo" />
+            </a>
+          </div>
+          <div>
+            <ul>
+              <li><a>ABOUT MARVEL</a></li>
+              <li><a>HELP/FAQS</a></li>
+              <li><a>CAREERS</a></li>
+              <li><a>INTERNSHIP</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a>ADVERTISING</a></li>
+              <li><a>DISNEY</a></li>
+              <li><a>MARVELHQ.COM</a></li>
+              <li><a>REDEEM DIGITAL COMICS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ft_level2">
+          <nav>
+            <a>Terms of Use</a>
+            <a>Privacy Policy</a>
+            <a>Your California Privacy Rights</a>
+            <a>Do Not Sell My Personal Information</a>
+            <a>Children's Online Privacy Policy</a>
+            <a>License Agreement</a>
+            <a>Interest-Based Ads</a>
+            <a>Marvel Insider Terms</a>
+            <span>©2022 MARVEL</span>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
 </html>
+\
