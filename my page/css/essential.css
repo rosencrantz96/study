@@ -15,8 +15,7 @@ section .con {
 
 /* ============================== */
 .youtube {
-    height: 800px;
-    margin-top: 50px;
+    height: 605px;
 }
 
 .youtube_content > h1 {
